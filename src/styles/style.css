@@ -1,0 +1,67 @@
+/* Container */
+#vending-machine-div {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    min-height: 100vh;
+}
+
+/* SlotItem */
+#slot-item-div .MuiCard-root {
+    max-width: 345px;
+}
+
+#slot-item-div .MuiCardContent-root {
+    text-align: center;
+    padding: 0;
+}
+
+#slot-item-div .btn-available {
+    border-radius: 20px;
+}
+
+/* InsertMoney */
+#coin-div {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#coin-div .text {
+    margin: 10px 0;
+}
+
+#coin-div button {
+    border-radius: 35px;
+    padding: 20px 0;
+    margin: 5px;
+}
+
+#money-display-div .box {
+    display: inline;
+    color: #3c763d;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#display-product-div {
+    text-align: center;
+    margin: 10px 0;
+}
+#display-product-div .box {
+    display: block;
+    color: #1976d2;
+    font-size: x-large;
+    font-weight: bold;
+    min-height: 40px;
+    margin: 0 auto;
+    width: 110px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+#enter-product-div button{
+    margin: 5px;
+}
+
+#money-display-div {
+    text-align: center;
+    margin-bottom: 10px;
+}
