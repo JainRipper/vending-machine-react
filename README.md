@@ -39,5 +39,5 @@ B. Without using the keypad
 
 ## Architectural Diagram
 
-![Architecture Diagram](assets/demo/architecture diagram.jpeg)
+![Architecture Diagram](./src/assets/demo/architecture%20diagram.jpeg)
 
