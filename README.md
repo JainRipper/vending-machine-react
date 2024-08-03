@@ -9,12 +9,17 @@
 
 ## Installation
 
-This project uses TypeScript, Material UI 5, and Webpack.
+This project uses TypeScript, Material UI 5, Redux and Webpack.
 
 ```bash
 npm install
 ```
 Open [http://localhost:8080/](http://localhost:8080/) to view it in the browser.
+
+### Note
+- Make sure to use node v.19 or later
+- If face error 'node-pre-gyp ERR!' please read [this artical](https://stackoverflow.com/questions/57879150/how-can-i-solve-error-gypgyp-errerr-find-vsfind-vs-msvs-version-not-set-from) and install Visual Studio Installer
+
 
 ## Usage
 
