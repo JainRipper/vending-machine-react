@@ -1,8 +1,3 @@
-
-## Demo
-
-![Demo](./src/assets/demo/demo.gif)
-
 # React Vending Machine
 
 - An online vending machine that would simulate a real-life one.
@@ -11,6 +6,11 @@
 - Have a keypad to enter the product code and a way to add credit (money) to the machine.
 
 - Still does not support resonsive view.
+
+## Demo
+
+![Demo](./src/assets/demo/demo.gif)
+
 
 ## Installation
 
