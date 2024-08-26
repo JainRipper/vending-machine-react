@@ -1,3 +1,8 @@
+
+## Demo
+
+![Demo](./src/assets/demo/demo.gif)
+
 # React Vending Machine
 
 - An online vending machine that would simulate a real-life one.
@@ -9,7 +14,7 @@
 
 ## Installation
 
-This project uses TypeScript, Material UI 5, Redux and Webpack.
+This project uses TypeScript, Material UI 5 and Webpack.
 
 ```bash
 npm install
@@ -41,8 +46,4 @@ B. Without using the keypad
 1. Insert coin to purchase
 2. Click 'Available' (if there is enough stock)
 3. (optional) Click 'Return Your Money' to get your money back.
-
-## Architectural Diagram
-
-![Architecture Diagram](./src/assets/demo/architecture%20diagram.jpeg)
 
