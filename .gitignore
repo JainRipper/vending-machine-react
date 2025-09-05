@@ -11,6 +11,10 @@
 # production
 /build
 
+# build output
+dist/
+
+
 # misc
 package-lock.json
 .DS_Store
