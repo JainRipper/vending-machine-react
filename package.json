@@ -29,7 +29,9 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open --mode development --hot",
-    "build": "webpack --mode production",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject"
   },
