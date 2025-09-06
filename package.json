@@ -35,6 +35,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
