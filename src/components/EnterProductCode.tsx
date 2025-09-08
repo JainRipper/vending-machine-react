@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button, Grid, Box, TextField, Typography } from "@mui/material";
 import "../styles/style.css"
 
@@ -42,7 +42,7 @@ export default function EnterProductCodeComponent(props: EnterProductCodeProps) 
             <Grid container item md={12} id="enter-product-div">
                 { keypad.map((row: any, i: number) => {
                     return (
-                        <Grid item md={12}>
+                        <Grid item md={12} key={i} sx={{ textAlign: 'center', marginBottom: '5px' }}>
                             { row.map((digit: string | null, j: number) => {
                                 return (digit)? 
                                 <Button variant="outlined" onClick={() => handleEnterProductCode(digit)}>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Grid, Typography } from "@mui/material";
 import { products } from "../data/product";
 import SlotItem from "./SlotItem";

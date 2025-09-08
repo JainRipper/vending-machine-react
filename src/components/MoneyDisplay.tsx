@@ -1,6 +1,5 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
-import { Button, Grid, Box, TextField, Typography } from "@mui/material";
+import { Button, Grid, Box, Typography } from "@mui/material";
 import "../styles/style.css"
 
 interface MoneyDisplayProps {

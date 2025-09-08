@@ -17,6 +17,7 @@ dist/
 
 # misc
 package-lock.json
+.vercel
 .DS_Store
 .env.local
 .env.development.local

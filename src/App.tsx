@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import Container from './components/Container';
+import React from "react";
+import Container from "./components/Container";
 
-function App() {
+export default function App() {
   return (
     <div >
       <Container />
     </div>
   );
 }
-
-export default App;

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Card, CardHeader, CardMedia, CardContent, Grid, Button, Typography } from "@mui/material";
 import '../styles/style.css';
 

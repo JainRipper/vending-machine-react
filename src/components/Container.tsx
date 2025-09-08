@@ -1,13 +1,5 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { RootState, AppDispatch } from "../state/store";
-import { 
-  decrement,
-  increment,
-  incrementByAmount,
-  incrementAsync,
-} from "../state/counter/counterSlice";
+import { useState } from "react";
 import { Grid, Divider, Typography } from "@mui/material";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import VendingMachine from "./VendingMachine";
@@ -46,8 +38,6 @@ declare module '@mui/material/styles' {
   });
 
 export default function ContainerComponent() {
-  const count = useSelector((state: RootState) => state.counter.value);
-  const dispatch = useDispatch<AppDispatch>();
 
     const [ money, setMoney ] = useState(0);
     const [ enterProductCode, setEnterProductCode ] = useState('');
