@@ -24,9 +24,9 @@ export default function SlotItemComponent(props: SlotItemProps) {
     }
 
     return(
-        <Grid item xs={2} sm={3} id="slot-item-div">
+        <Grid item xs={12} sm={4} lg={3} id="slot-item-div">
             <div style={{ boxShadow: (productCode == props.enterProductCode? '0px 0px 22px 1px rgba(60,118,61,1)': 'unset') }}>
-                <Card>
+                <Card sx={{ margin: '0 auto', border: '1px solid #eee' }} className="slot-item-card">
                     <CardContent>
                         <Typography variant="h6" component="div" sx={{ color: (name? '#3c763d' : 'rgba(0, 0, 0, 0.26)'),
                             backgroundColor: (name? '#dff0d8' : '#fcf8e3'), padding: '5px 0'}}>

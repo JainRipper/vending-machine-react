@@ -36,7 +36,7 @@ export default function EnterProductCodeComponent(props: EnterProductCodeProps) 
     return (
         <>
             <Grid item md={12} id="display-product-div">
-                <Typography variant="subtitle1">Enter Product Code: </Typography>
+                <Typography variant="subtitle1" sx={{ fontWeight: 'bold', margin: '10px 0' }}>Enter Product Code: </Typography>
                 <Box component="div" className="box">{enterProductCode}</Box>
             </Grid>
             <Grid container item md={12} id="enter-product-div">
@@ -45,10 +45,10 @@ export default function EnterProductCodeComponent(props: EnterProductCodeProps) 
                         <Grid item md={12} key={i} sx={{ textAlign: 'center', marginBottom: '5px' }}>
                             { row.map((digit: string | null, j: number) => {
                                 return (digit)? 
-                                <Button variant="outlined" onClick={() => handleEnterProductCode(digit)}>
+                                <Button key={j} variant="outlined" onClick={() => handleEnterProductCode(digit)}>
                                     <Typography variant="subtitle1">{digit}</Typography>
                                 </Button> :
-                                <Button variant="outlined" onClick={() => handleRemoveProductCode()}>
+                                <Button key={j} variant="outlined" onClick={() => handleRemoveProductCode()}>
                                     <Typography variant="subtitle1">&#x2190;</Typography>
                                 </Button>
                             })}
