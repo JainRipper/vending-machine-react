@@ -25,8 +25,10 @@ export default function InsertMoneyComponent(props: InsertMoneyProps) {
 
     return(            
         <>
-            <Typography variant="subtitle1" className="text" sx={{ fontWeight: 'bold', margin: '10px 0' }}>Pick up your coins </Typography>
-            <Grid item sx={{ margin: '0 auto', textAlign: 'center', maxWidth: '90%' }} >
+            <Typography variant="subtitle1" className="text" sx={{ fontWeight: 'bold', margin: '10px 0' }}>
+                Pick up your coins 
+            </Typography>
+            <Grid item md={12} sx={{ margin: '0 auto', textAlign: 'center', maxWidth: '90%' }} >
                 {coinsList.map((coin) => (
                     <Button key={coin.id} color="ochre" variant="contained" onClick={() => onItemClick(coin.value)}>
                         {coin.coin}

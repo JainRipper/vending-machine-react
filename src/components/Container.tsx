@@ -78,7 +78,7 @@ export default function ContainerComponent() {
                   <Grid item xs={12} sx={{ textAlign: 'center' }}>
                       <Typography variant="h4" sx={{ margin: '1rem 0' }}>Input Screen</Typography>
                   </Grid>
-                  <Grid item md={12} sx={{ textAlign: 'center', marginBottom: '5rem' }} id="money-display-div">
+                  <Grid item md={12} sx={{ textAlign: 'center', marginBottom: '5rem' }} className="money-display-div">
                     <MoneyDisplay money={money} handleCancelPayment={onCancelPayment} />
                   </Grid>
                 </Grid>
@@ -87,7 +87,7 @@ export default function ContainerComponent() {
                   <Grid item md={12} lg={6} id="coin-div">
                     <InsertMoney money={money} handleMoneyAvaiable={onMoneyAvailable} />
                   </Grid>
-                  <Grid container item md={12} lg={6} sx={{ textAlign: 'center', marginBottom: '10px'}}>
+                  <Grid container item md={12} lg={6} sx={{ textAlign: 'center', marginBottom: '10px'}} justifyContent="center" >
                     <EnterProductCode enterProductCode={enterProductCode} handleEnterProductCode={onEnterProductCode}/>
                   </Grid>
                 </Grid>

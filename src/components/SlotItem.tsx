@@ -43,17 +43,25 @@ export default function SlotItemComponent(props: SlotItemProps) {
                         alt={name}
                         sx={{ objectFit: "contain" }}
                     />
-                    <CardHeader        
+                    <CardHeader
                         action={
                         <Button variant="contained" color="success" size="small" className="btn-available"
                             onClick={() => handleAvailibily()} title="Click to buy"
-                            disabled={(name && props.money >= price ? ( (availability <= 0)? true : false) : true)} >
+                            disabled={(name && productCode == props.enterProductCode && props.money >= price ? ( (availability <= 0)? true : false) : true)} >
                             {'Available:  '}
                             <span style={{ fontWeight: 'bold', fontSize: 'large'}}>{availability}</span>                            
                         </Button>
                         }
                         titleTypographyProps={{variant:'subtitle1' }}
                         title={(price != null ? price + ' $' : 'N/A')}
+                        sx={{ ".MuiCardHeader-title" : { 
+                            fontWeight: 'bold',
+                            fontSize: 'large',
+                            width: '5rem',
+                            textAlign: 'center',
+                            margin: '0 auto',
+                            color: (price != null && productCode == props.enterProductCode ? props.money >= price ? '#3c763d' : '#f44336' : 'rgba(0, 0, 0, 0.26)'),
+                        } }}
                     />
                 </Card>
             </div>

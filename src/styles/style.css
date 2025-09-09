@@ -56,7 +56,8 @@
     margin: 5px;
 }
 
-#money-display-div .box {
+.money-display-div .box,
+.money-display-div span {
     display: inline;
     color: #3c763d;
     font-size: x-large;
