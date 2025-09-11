@@ -34,7 +34,6 @@ export default function InsertMoneyComponent(props: InsertMoneyProps) {
                         {coin.coin}
                     </Button>
                 ))}
-                <Button color="ochre" variant="contained" onClick={() => onItemClick(2)}>2$</Button>
             </Grid>
         </>
     );
