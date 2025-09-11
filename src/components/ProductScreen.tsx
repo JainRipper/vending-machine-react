@@ -21,7 +21,7 @@ export default function ProductScreenComponent(props: ProductScreenProps) {
                 <Typography variant="h4">Slot Item Screen</Typography>
             </Grid>
             <Grid item xs={12} sx={{ textAlign: 'center', marginBottom: '10px' }} className="money-display-div">
-                <Typography variant="h6">Money Available: <span style={{ fontWeight: 'bold', fontSize: 'large'}}>{props.money} $</span></Typography>
+                <Typography variant="h6">Money Available: <span style={{ fontWeight: 'bold', fontSize: 'large'}}>{Math.round(props.money * 100) / 100} $</span></Typography>
             </Grid>
             { /* Product List */}
             <Grid container item spacing={2} sx={{ margin: '0 auto', maxWidth: '90rem' }}>
